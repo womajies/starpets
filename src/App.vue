@@ -1,26 +1,42 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <a-layout class="layout">
+    <layout-header />
+    <a-layout-content style="padding: 0 50px">
+      <layout-breadcrumbs />
+      <div class="content">
+        <router-view></router-view>
+      </div>
+    </a-layout-content>
+  </a-layout>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import { Layout, LayoutContent } from 'ant-design-vue';
+import LayoutHeader from '@/components/layout/LayoutHeader.vue'
+import LayoutBreadcrumbs from '@/components/layout/LayoutBreadcrumbs.vue'
 
 export default {
   name: 'App',
+
   components: {
-    HelloWorld
-  }
+    ALayout: Layout,
+    ALayoutContent: LayoutContent,
+    LayoutHeader,
+    LayoutBreadcrumbs,
+  },
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body {
+  margin: 0;
+}
+.layout {
+  min-height: 100vh;
+}
+.content {
+  min-height: 280px;
+  padding: 24px;
+  background: #fff;
 }
 </style>
