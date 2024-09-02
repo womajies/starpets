@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkstarpets_gg"]=self["webpackChunkstarpets_gg"]||[]).push([[516],{5516:function(n,t,u){u.r(t),u.d(t,{default:function(){return k}});var e=u(6768);const r={class:"not-found"},s=(0,e.Lk)("h2",null,"404",-1),a=(0,e.Lk)("p",null,"Упс, тут ничего нет... Кажется вы забрели куда-то не туда :)",-1),c=[s,a];function o(n,t,u,s,a,o){return(0,e.uX)(),(0,e.CE)("div",r,c)}var l={name:"NotFound"},f=u(1241);const d=(0,f.A)(l,[["render",o]]);var k=d}}]);
+//# sourceMappingURL=516.f5cd5b3f.js.map
