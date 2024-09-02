@@ -17,9 +17,9 @@ git add -A
 git commit -m 'deploy'
 
 # если публикация происходит по адресу https://<USERNAME>.github.io
-# git push -f git@github.com:womajies/starpets.gg.github.io.git master
+# git push -f git@github.com:womajies/starpets.github.io.git master
 
 # если публикация происходит по адресу https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:womajies/starpets.gg.git master:gh-pages
+git push -f git@github.com:womajies/starpets.git master:gh-pages
 
 cd -
